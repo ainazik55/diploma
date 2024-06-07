@@ -1,0 +1,59 @@
+/* Auth styles */
+.Auth {
+  display: flex;
+  align-items: center;
+}
+
+.blueBtn {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.blueBtn:hover {
+  background-color: #757575;
+  transform: translateY(-2px);
+}
+
+.blueBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.icon i {
+  font-size: 24px;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.icon i:hover {
+  color: #0056b3;
+}
+
+span {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #000000;
+}
+
+span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+span a:hover {
+  text-decoration: underline;
+}

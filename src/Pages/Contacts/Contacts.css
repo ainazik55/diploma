@@ -1,0 +1,99 @@
+pages/Contacts.css
+.Contacts {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .Contact .container {
+    max-width:1550px;
+  
+  }
+    
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+    text-align: center;
+  }
+  
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-method {
+    background: #eaeaea;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .contact-method h2 {
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .contact-form {
+    margin-top: 2rem;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #757575;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-methods {
+      flex-direction: column;
+    }
+  
+    .contact-form h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

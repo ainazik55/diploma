@@ -1,0 +1,60 @@
+/* Menu styles */
+.Menu {
+  background-color: #ffffff;
+}
+
+.Menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.Menu ul li {
+  margin-right: 20px;
+}
+
+.Menu ul li:last-child {
+  margin-right: 0;
+}
+
+.Menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 4px;
+  position: relative; /* Добавляем позиционирование для абсолютного элемента */
+}
+
+.Menu ul li a::before {
+  content: ''; /* Создаем пустой псевдоэлемент */
+  position: absolute; /* Абсолютное позиционирование */
+  width: 100%; /* Ширина равна ширине текста */
+  height: 2px; /* Толщина линии */
+  background-color: #000000; /* Цвет линии */
+  bottom: 0; /* Размещаем линию внизу */
+  left: 0; /* Выравниваем по левому краю */
+  transform: scaleX(0); /* Изначально линия невидима */
+  transition: transform 0.3s ease-in-out; /* Добавляем плавный эффект */
+}
+
+.Menu ul li a:hover::before {
+  transform: scaleX(1); /* При наведении увеличиваем ширину линии */
+}
+
+@media (max-width: 768px) {
+  .Menu ul {
+    flex-direction: column;
+  }
+
+  .Menu ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .Menu ul li:last-child {
+    margin-bottom: 0;
+  }
+}
