@@ -55,6 +55,7 @@
 .product .actions span {
   font-size: 1.2rem;
   color: #007bff;
+  margin-left: 15%;
 }
 
 .product:hover {

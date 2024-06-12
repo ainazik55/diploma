@@ -1,15 +1,70 @@
-.CategoryList{
-    background: rgb(245, 245, 247);
-    padding: 10px 0;
-}
-.CategoryList a{
+/* CategoryList.css */
+
+.CategoryList {
+    position: relative;
+    display: inline-block;
+    border-radius: 18%;
+  }
+  
+  .dropdownBtn {
+    background-color: #000000; /* Зеленый цвет фона кнопки */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+  }
+  
+  .dropdownBtn h3 {
+    margin: 0;
+    padding-right: 10px;
+  }
+  
+  .dropdownContent {
+    font-family:Playfair+Display ;
+    border-radius: 15px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .dropdownContent li {
+    list-style-type: none;
+    padding: 8px 16px;
+  }
+  
+  .dropdownContent li a {
+    color: black;
+    text-decoration: none;
     display: block;
-    padding: 3px 10px;
-    transition: 0.3s;
-}
-.CategoryList a:hover{
-    background: rgb(214, 214, 215);;
-}
-.dropdownBtn{
-    padding-bottom: 5px;
-}
+  }
+  
+  .dropdownContent li a:hover {
+    background-color: #ddd;
+  }
+  
+  .CategoryList:hover .dropdownContent {
+    display: block;
+  }
+  
+  .CategoryList button.dropdownBtn:focus + .dropdownContent {
+    display: block;
+  }
+  
+  @media (max-width: 600px) {
+    .dropdownContent {
+      position: static;
+      box-shadow: none;
+    }
+    
+    .dropdownContent li {
+      padding: 10px 20px;
+    }
+  }
+  

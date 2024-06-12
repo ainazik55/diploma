@@ -20,12 +20,11 @@ export default function Product() {
       <div className="ProductImg">
         <img src={product.img} alt={product.name} />
       </div>
-      <div>
+      <div className="ProductDetails">
         <h1>{product.name}</h1>
         <p><strong>Price:</strong> {product.price}$</p>
         <p><strong>Description: </strong>{product.description}</p>
         <AddToCart product={product} />
-     
       </div>
     </div>
   )

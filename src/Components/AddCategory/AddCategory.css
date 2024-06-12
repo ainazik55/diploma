@@ -28,7 +28,7 @@
     padding: 10px 20px;
     font-size: 1.2rem;
     color: white;
-    background-color: #007bff;
+    background-color: #757575;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -41,7 +41,7 @@
   }
   
   .AddCategory button:hover:not(:disabled) {
-    background-color: #0056b3;
+    background-color: #000000;
   }
   
   @media (min-width: 768px) {

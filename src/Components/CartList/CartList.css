@@ -38,12 +38,15 @@
   align-items: center;
   text-align: center;
   margin: 10px 0;
+  width: 100%;
 }
 
 .inputs {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Align text and button in one line */
   gap: 10px;
+  width: 100%;
 }
 
 .inputs input {
@@ -61,18 +64,14 @@
 
 .removeButton {
   padding: 5px 10px;
-  margin-top: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #757575;
-  color: #fff;
+ margin-right: 10%;
+  color: #000000;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.removeButton:hover {
-  background-color: #000000;
-}
 
 .totalPrice {
   font-size: 1.5rem;
@@ -99,12 +98,17 @@
   }
 
   .productDetails {
-    align-items: flex-start;
+    
     text-align: left;
     margin-left: 20px;
+    flex-direction: row; /* Align items in one line */
+    justify-content: space-between;
+    width: 100%;
   }
 
   .inputs {
     margin-left: 20px;
+    flex-direction: row;
+    justify-content: flex-start; /* Ensure inputs and button are in one line */
   }
 }

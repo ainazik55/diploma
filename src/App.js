@@ -66,8 +66,10 @@ function App() {
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/orders" element={<Orders />} />
+            
 
             <Route path="*" element={<NotFound />} />
+            
           </Routes>
         </Layout>
       </AppContext.Provider>

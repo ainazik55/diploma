@@ -55,6 +55,8 @@ function Home() {
           <p>Our support team is here to assist you 24/7.</p>
         </div>
       </section>
+
+      
     </div>
   );
 }

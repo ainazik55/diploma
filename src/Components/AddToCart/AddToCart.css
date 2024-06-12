@@ -8,6 +8,7 @@
   border-radius: 5px;
   font-family: inherit;
   transition: all 100ms linear;
+  margin-right: 15%;
 }
 .AddToCart button:hover {
   
