@@ -1,4 +1,4 @@
-/* Home styles */
+Home styles
 .home {
     font-family: Arial, sans-serif;
   }
@@ -331,24 +331,6 @@
 	height: auto;
 	display: block;
   }
-  
-  /* .hover-text-one figcaption {
-	padding: 1rem;
-	text-align: center;
-	background: #fff;
-  }
-  
-  .hover-text-one:hover {
-	transform: scale(1.05);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-   */
-  /* @media (max-width: 768px) {
-	.hover-text-one {
-	  max-width: 100%;
-	  margin: 0.5rem 0;
-	}
-  } */
   
   @media (max-width: 768px) {
     .info {

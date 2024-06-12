@@ -1,33 +1,68 @@
 import React from 'react';
 import './Home.css';
-import video from '../../img/dior-video.mp4'
+import video from '../../img/dior-video.mp4';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
+  };
+
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black" }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black" }}
+        onClick={onClick}
+      />
+    );
+  }
+
   return (
     <div className="home">
       <section className="banner">
-      <video width="100%" height="100%" autoPlay muted loop>
-        <source src={video} type="video/mp4"/>
-      </video>
-        {/* <img src="https://www.japantimes.co.jp/uploads/imported_images/uploads/2021/11/np_file_124444.jpeg" alt="" /> */}
+        <video width="100%" height="100%" autoPlay muted loop>
+          <source src={video} type="video/mp4" />
+        </video>
       </section>
 
+      
 
-      <section className="info ">
+      <section className="info">
         {/* Первая картинка */}
-        <div class="hover-text-one flex ">
-          <figure class="effect-text-two ">
-            <img src="https://fashiongtonpost.com/wp-content/uploads/2020/08/christiandior_main.jpg" alt="" />
+        <div className="hover-text-one flex">
+          <figure className="effect-text-two">
+            <img src="https://fashiongtonpost.com/wp-content/uploads/2020/08/christiandior_main.jpg" alt="Christian Dior" />
             <figcaption>
               <h3>Christian DIOR</h3>
-              <p>the only fashion designer who became a celebrity and revered from his very first collection</p>
+              <p>The only fashion designer who became a celebrity and revered from his very first collection</p>
             </figcaption>
           </figure>
         </div>
-        {/* <!-- Вторая картинка --> */}
-        <div class="hover-text-one flex ">
-          <figure class="effect-text-one  ">
-            <img src="https://images.adsttc.com/media/images/63a3/2f3f/a452/0822/a34f/ae60/newsletter/christian-dior-designer-of-dreams-exhibition-oma_7.jpg?1671638952" alt="" />
+        {/* Вторая картинка */}
+        <div className="hover-text-one flex">
+          <figure className="effect-text-one">
+            <img src="https://images.adsttc.com/media/images/63a3/2f3f/a452/0822/a34f/ae60/newsletter/christian-dior-designer-of-dreams-exhibition-oma_7.jpg?1671638952" alt="Galerie Dior" />
             <figcaption>
               <h3>Galerie Dior</h3>
               <p>This is the place for fashion lovers in Paris!</p>
@@ -35,10 +70,6 @@ function Home() {
           </figure>
         </div>
       </section>
-
-      {/* <section className="banner">
-        <img src="https://cdn.sortiraparis.com/images/80/83043/957699-dior-j-adore-l-exposition-gratuite-qui-celebre-le-parfum-iconique-de-la-maison.jpg" alt="Banner 2" />
-      </section> */}
 
       <section className="highlights">
         <h2>Why Choose Us?</h2>
@@ -55,8 +86,6 @@ function Home() {
           <p>Our support team is here to assist you 24/7.</p>
         </div>
       </section>
-
-      
     </div>
   );
 }
